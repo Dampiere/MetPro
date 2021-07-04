@@ -158,7 +158,7 @@ $(document).ready(function () {
             top = $(id).offset().top;
         $('body,html').animate({
             scrollTop: top
-        }, 600);
+        }, 500);
     });
 });
 
@@ -169,7 +169,18 @@ $(document).ready(function () {
             top = $(id).offset().top;
         $('body,html').animate({
             scrollTop: top
-        }, 1000);
+        }, 800);
+    });
+});
+
+$(document).ready(function () {
+    $("#menu3").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: top
+        }, 800);
     });
 });
 
